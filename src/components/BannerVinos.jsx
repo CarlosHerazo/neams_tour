@@ -8,7 +8,7 @@ const bannerVinos = [
     title: 'Vino de corozo',
     price: '$150.000',
     promotion: 'vino de corozo, ', 
-    img: './src/assets/img/vino_1.jpg',
+    img: './assets/img/vino_1.jpg',
   },
   
 ];

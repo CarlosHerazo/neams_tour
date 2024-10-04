@@ -8,37 +8,37 @@ const preciosOfertas = [
     title: 'Ruta a Mompox',
     price: '$150.000',
     promotion: '10% de descuento si reservas antes del 15 de octubre.',
-    img: './src/assets/img/ruta_mompox.jpg',
+    img: './assets/img/ruta_mompox.jpg',
   },
   {
     title: 'Ruta de la Filigrana',
     price: '$120.000',
     promotion: 'Promoción: Lleva a un amigo y obtén un 20% de descuento.',
-    img: './src/assets/img/ruta_filigrana.webp',
+    img: './assets/img/ruta_filigrana.webp',
   },
   {
     title: 'Ruta de Iglesias',
     price: '$180.000',
     promotion: 'Incluye degustación de vinos locales.',
-    img: './src/assets/img/ruta_iglesias.avif',
+    img: './assets/img/ruta_iglesias.avif',
   },
   {
     title: 'Ruta Gastronómica',
     price: '$140.000',
     promotion: 'Incluye degustación de platillos típicos.',
-    img: './src/assets/img/ruta_gastronomica.jpg',
+    img: './assets/img/ruta_gastronomica.jpg',
   },
   {
     title: 'Ruta Ecológica',
     price: '$110.000',
     promotion: 'Tour guiado por parques naturales.',
-    img: './src/assets/img/ruta_ecologica.jpg',
+    img: './assets/img/ruta_ecologica.jpg',
   },
   {
     title: 'Ruta Cultural',
     price: '$130.000',
     promotion: 'Descuento del 15% para estudiantes.',
-    img: './src/assets/img/mompox.jpg',
+    img: './assets/img/mompox.jpg',
   },
 ];
 

@@ -43,7 +43,7 @@ const HeroVideo = () => {
           zIndex: -1, // Colocamos el video detrás del contenido
         }}
       >
-        <source src="./src/assets/img/header_video.mp4" type="video/mp4" />
+        <source src="./assets/img/header_video.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
 

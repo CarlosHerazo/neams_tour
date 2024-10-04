@@ -7,7 +7,7 @@ const Banner = () => {
             sx={{
                 position: 'relative',
                 height: '500px', // Altura del banner
-                backgroundImage: 'url(./src/assets/img/header_mompox.jpg)', // Ruta de la imagen de fondo
+                backgroundImage: 'url(./assets/img/header_mompox.jpg)', // Ruta de la imagen de fondo
                 backgroundSize: 'cover', // La imagen cubre todo el banner
                 backgroundPosition: 'center', // Centra la imagen
                 backgroundRepeat: 'no-repeat', // No repetir la imagen

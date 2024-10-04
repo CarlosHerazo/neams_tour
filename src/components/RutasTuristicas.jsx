@@ -5,35 +5,35 @@ import { Link } from 'react-scroll';
 // Array de datos de imágenes (puedes personalizar los enlaces de las imágenes y los títulos)
 const itemData = [
     {
-        img: './src/assets/img/filigrana.webp',
+        img: './assets/img/filigrana.webp',
         title: 'Filigrana',
     },
     {
-        img: './src/assets/img/filigrana2.webp',
+        img: './assets/img/filigrana2.webp',
         title: 'Filigrana',
     },
     {
-        img: './src/assets/img/vinos.png',
+        img: './assets/img/vinos.png',
         title: 'Vinos Locales',
     },
     {
-        img: './src/assets/img/vinos2.png',
+        img: './assets/img/vinos2.png',
         title: 'Vinos Locales',
     },
     {
-        img: './src/assets/img/iglesias.avif',
+        img: './assets/img/iglesias.avif',
         title: 'Iglesias',
     },
     {
-        img: './src/assets/img/cementerio.jpg',
+        img: './assets/img/cementerio.jpg',
         title: 'Cementerio',
     },
     {
-        img: './src/assets/img/plaza.webp',
+        img: './assets/img/plaza.webp',
         title: 'Plaza',
     },
     {
-        img: './src/assets/img/mompox.jpg',
+        img: './assets/img/mompox.jpg',
         title: 'Plaza',
     },
 ];
