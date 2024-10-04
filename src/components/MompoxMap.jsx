@@ -8,16 +8,22 @@ const MompoxMap = () => {
     const [position, setPosition] = useState([9.1434, -74.2572]); // Posición predeterminada de Mompox
     const [route, setRoute] = useState([]); // Estado para la ruta
 
-
     // Configura la ubicación de los iconos de los marcadores
-    delete L.Icon.Default.prototype._getIconUrl;
-    L.Icon.Default.mergeOptions({
-        iconRetinaUrl: '/marker-icon-2x.png',
-        iconUrl: '/marker-icon.png',
-        shadowUrl: '/marker-shadow.png',
-    });
+    const configureMarkerIcons = () => {
+        // Eliminar la función predeterminada para obtener las URL de los iconos
+        delete L.Icon.Default.prototype._getIconUrl;
+
+        // Definir la configuración de los iconos de los marcadores
+        L.Icon.Default.mergeOptions({
+            iconRetinaUrl: '/marker-icon-2x.png', // Ruta al icono en retina
+            iconUrl: '/marker-icon.png',           // Ruta al icono normal
+            shadowUrl: '/marker-shadow.png',       // Ruta a la sombra del icono
+        });
+    };
 
     useEffect(() => {
+        configureMarkerIcons(); // Llama a la función para configurar los iconos
+
         // Verifica si el navegador admite geolocalización
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
