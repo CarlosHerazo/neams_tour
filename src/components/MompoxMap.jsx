@@ -2,11 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { MapContainer, TileLayer, Polyline, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import L from 'leaflet';
 
 const MompoxMap = () => {
     const [position, setPosition] = useState([9.1434, -74.2572]); // Posición predeterminada de Mompox
     const [route, setRoute] = useState([]); // Estado para la ruta
+
+
+    // Configura la ubicación de los iconos de los marcadores
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+        iconRetinaUrl: '/marker-icon-2x.png',
+        iconUrl: '/marker-icon.png',
+        shadowUrl: '/marker-shadow.png',
+    });
 
     useEffect(() => {
         // Verifica si el navegador admite geolocalización
