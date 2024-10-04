@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { MapContainer, TileLayer, Polyline, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
+
 const MompoxMap = () => {
     const [position, setPosition] = useState([9.1434, -74.2572]); // Posición predeterminada de Mompox
     const [route, setRoute] = useState([]); // Estado para la ruta
@@ -16,7 +17,7 @@ const MompoxMap = () => {
                     setPosition([latitude, longitude]); // Establece la posición actual
 
                     // Obtener la ruta desde la ubicación actual hasta Mompox
-                    fetch(`http://router.project-osrm.org/route/v1/driving/${longitude},${latitude};-74.2572,9.1434?overview=full&geometries=geojson`)
+                    fetch(`https://router.project-osrm.org/route/v1/driving/${longitude},${latitude};-74.2572,9.1434?overview=full&geometries=geojson`)
                         .then(response => {
                             if (!response.ok) {
                                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -73,7 +74,7 @@ const MompoxMap = () => {
 
                 {/* Dibuja la ruta si existe */}
                 {route.length > 0 && (
-                    <Polyline positions={route} color="blue" />
+                    <Polyline positions={route} color="red" />
                 )}
             </MapContainer>
         </div>
