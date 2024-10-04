@@ -10,10 +10,9 @@ const MompoxMap = () => {
 
     // Configura la ubicación de los iconos de los marcadores
     const configureMarkerIcons = () => {
-        // Eliminar la función predeterminada para obtener las URL de los iconos
-        delete L.Icon.Default.prototype._getIconUrl;
+        delete L.Icon.Default.prototype._getIconUrl; // Elimina la función predeterminada
 
-        // Definir la configuración de los iconos de los marcadores
+        // Define la configuración de los iconos de los marcadores
         L.Icon.Default.mergeOptions({
             iconRetinaUrl: '/marker-icon-2x.png', // Ruta al icono en retina
             iconUrl: '/marker-icon.png',           // Ruta al icono normal
@@ -22,7 +21,7 @@ const MompoxMap = () => {
     };
 
     useEffect(() => {
-        configureMarkerIcons(); // Llama a la función para configurar los iconos
+        configureMarkerIcons(); // Configura los iconos al montar el componente
 
         // Verifica si el navegador admite geolocalización
         if (navigator.geolocation) {
@@ -61,10 +60,7 @@ const MompoxMap = () => {
 
     return (
         <div style={{ textAlign: 'center', margin: '2rem auto', maxWidth: '100%' }}>
-            <Typography
-                variant="h3"
-                sx={{ fontWeight: 'bold', marginBottom: '2rem' }}
-            >
+            <Typography variant="h3" sx={{ fontWeight: 'bold', marginBottom: '2rem' }}>
                 Nuestra ubicación
             </Typography>
             <MapContainer center={position} zoom={13} style={{ height: '400px', width: '100%' }} scrollWheelZoom={false}>
