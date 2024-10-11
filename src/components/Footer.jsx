@@ -23,9 +23,9 @@ const Footer = () => {
                 <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
                     Contacto
                 </Typography>
-                <Typography variant="body1">Tel: +57 123 456 7890</Typography>
-                <Typography variant="body1">Email: info@neamstour.com</Typography>
-                <Typography variant="body1">Dirección: Calle 123, Cartagena, Colombia</Typography>
+                <Typography variant="body1">Tel: +57 3003778168</Typography>
+                <Typography variant="body1">Email: namstours5@gmail.com</Typography>
+                <Typography variant="body1">Dirección: Cartagena, Colombia</Typography>
             </Box>
 
             {/* Redes Sociales */}
@@ -42,7 +42,7 @@ const Footer = () => {
                     <Facebook />
                 </IconButton>
                 <IconButton
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/namstours?igsh=dzhwMzVybGduNjY0"
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{ color: '#000', marginRight: 1 }}

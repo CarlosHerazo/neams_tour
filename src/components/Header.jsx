@@ -72,7 +72,7 @@ const Header = () => {
           </IconButton>
 
           <Typography variant="h6" sx={{ flexGrow: 1, fontSize: '1.5rem', color: textColor }}>
-            Neams Tour
+            Nams Tour
           </Typography>
 
           {/* Botones para pantallas grandes */}
