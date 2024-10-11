@@ -9,6 +9,7 @@ import { Box } from '@mui/material';
 import BannerVinos from './components/BannerVinos';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import VideoTour from './components/VideoTour';
 const theme = createTheme({
   typography: {
     fontFamily: 'Poppins, Arial, sans-serif',
@@ -35,6 +36,9 @@ function App() {
             </Box>
             <Box id="bannerVinos">
               <BannerVinos />
+            </Box>
+            <Box id="videoTours">
+              <VideoTour />
             </Box>
             <Box id="mompoxMap">
               <MompoxMap />
